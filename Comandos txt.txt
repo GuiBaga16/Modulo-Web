@@ -1,0 +1,27 @@
+TYPESCRIPT
+
+Comandos de instalação:
+
+> npm init
+> npm install --save-dev typescript
+> npx tsc --init
+
+usar para pedir dados:
+
+> import promptSync from "prompt-sync";
+> const prompt = promptSync();
+
+EX:
+const nome: string = prompt("Digite seu nome: ");
+console.log(nome);
+
+const numero: number = Number(prompt("Digite um número: "));
+console.log(numero);
+
+Para rodar:
+
+> npx tsc
+> node app.js
+||
+> package.json -> "Scripts" -> colocar: "dev": "tsc npx && node app.js"
+> executar : npm rum dev 
