@@ -1,14 +1,10 @@
-export default class Fruta {
-    private _nome: string = "";
-    private _cor: string = "";
-    private _tamanho: number = 100;
-
-
-    constructor(nome?: string,
-        cor?: string,
-        tamanho?: number,
-    ) {
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Fruta {
+    constructor(nome, cor, tamanho) {
+        this._nome = "";
+        this._cor = "";
+        this._tamanho = 100;
         if (nome !== undefined) {
             this.nome = nome;
         }
@@ -19,48 +15,33 @@ export default class Fruta {
             this.tamanho = tamanho;
         }
     }
-
-    public get nome(): string {
+    get nome() {
         return this._nome;
     }
-
-
-    public set nome(value: string) {
+    set nome(value) {
         this._nome = value;
     }
-
-
-    public get cor(): string {
+    get cor() {
         return this._cor;
     }
-
-
-    public set cor(value: string) {
+    set cor(value) {
         this._cor = value;
     }
-
-
-    public get tamanho (): number {
+    get tamanho() {
         return this._tamanho;
     }
-
-
-    public set tamanho(value: number) {
+    set tamanho(value) {
         this._tamanho = value;
     }
-
-
     //* ---------------------------------- //*
-
-    consumir(): void {
-        this._tamanho -= 20 ; 
+    consumir() {
+        this._tamanho -= 20;
     }
-
-    public imprimeAtributos(): void {
-
+    imprimeAtributos() {
         console.log(`Nome: ${this._nome}`);
         console.log(`Cor: ${this._cor}`);
         console.log(`Tamanho restante: ${this._tamanho}`);
         console.log(`--------------------------------`);
     }
 }
+exports.default = Fruta;

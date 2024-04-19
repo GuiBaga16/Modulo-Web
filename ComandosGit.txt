@@ -1,0 +1,9 @@
+COMANDOS PARA EXECUTAR NO GIT
+
+-> git config
+
+-> git config --global user.name "GuiBaga16"
+
+-> git config --global user.email "guilherme.bagatini@universo.univates.br
+
+-> https://github.com/mateusrovedaa/aula-ja-encantado.git

@@ -1,17 +1,13 @@
-export default class Alunos {
-    private _nota1: number = 0;
-    private _nota2: number = 0;
-    private _nota3: number = 0;
-    private _nome: string = "";
-    private _escola: string = "";
-    media: number = 0;
-
-    constructor(nota1?: number,
-        nota2?: number,
-        nota3?: number,
-        nome?: string,
-        escola?: string
-    ) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Alunos {
+    constructor(nota1, nota2, nota3, nome, escola) {
+        this._nota1 = 0;
+        this._nota2 = 0;
+        this._nota3 = 0;
+        this._nome = "";
+        this._escola = "";
+        this.media = 0;
         if (nota1 !== undefined) {
             this.nota1 = nota1;
         }
@@ -27,79 +23,51 @@ export default class Alunos {
         if (escola !== undefined) {
             this.escola = escola;
         }
-
     }
-
-
-    public get nota1(): number {
+    get nota1() {
         return this._nota1;
     }
-
-
-    public set nota1(value: number) {
+    set nota1(value) {
         this._nota1 = value;
     }
-
-
-    public get nota2(): number {
+    get nota2() {
         return this._nota2;
     }
-
-
-    public set nota2(value: number) {
+    set nota2(value) {
         this._nota2 = value;
     }
-
-
-    public get nota3(): number {
+    get nota3() {
         return this._nota3;
     }
-
-
-    public set nota3(value: number) {
+    set nota3(value) {
         this._nota3 = value;
     }
-
-
-    public get nome(): string {
+    get nome() {
         return this._nome;
     }
-    public set nome(value: string) {
+    set nome(value) {
         this._nome = value;
     }
-
-
-    public get escola(): string {
+    get escola() {
         return this._escola;
     }
-
-
-    public set escola(value: string) {
+    set escola(value) {
         this._escola = value;
     }
-
-
     //* ---------------------------------- //*
-
-
-    definirNota1(nota: number): void {
+    definirNota1(nota) {
         this.nota1 = nota;
     }
-
-    definirNota2(nota: number): void {
+    definirNota2(nota) {
         this.nota2 = nota;
     }
-
-    definirNota3(nota: number): void {
+    definirNota3(nota) {
         this.nota3 = nota;
     }
-
-
-    mediaNotas(): void {
+    mediaNotas() {
         this.media = (this.nota1 + this.nota2 + this.nota3) / 3;
     }
-
-    public imprimeAtributos(): void {
+    imprimeAtributos() {
         console.log(`Nota1: ${this._nota1}`);
         console.log(`Nota2: ${this._nota2}`);
         console.log(`Nota3: ${this._nota3}`);
@@ -109,3 +77,4 @@ export default class Alunos {
         console.log(`--------------------------------`);
     }
 }
+exports.default = Alunos;

@@ -1,19 +1,13 @@
-export default class Cidade {
-    private _tamanho: string = "";
-    private _prefeito: string = "";
-    private _pais: string = "";
-    private _nome: string = "";
-    private _habitantes: number = 0;
-    private _estado: string = "";
-
-
-    constructor(tamanho?: string,
-        prefeito?: string,
-        pais?: string,
-        nome?: string,
-        habitantes?: number,
-        estado?: string
-    ) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Cidade {
+    constructor(tamanho, prefeito, pais, nome, habitantes, estado) {
+        this._tamanho = "";
+        this._prefeito = "";
+        this._pais = "";
+        this._nome = "";
+        this._habitantes = 0;
+        this._estado = "";
         if (tamanho !== undefined) {
             this.tamanho = tamanho;
         }
@@ -33,88 +27,53 @@ export default class Cidade {
             this.estado = estado;
         }
     }
-
-
-    public get tamanho(): string {
+    get tamanho() {
         return this._tamanho;
     }
-
-
-    public set tamanho(value: string) {
+    set tamanho(value) {
         this._tamanho = value;
     }
-
-
-    public get prefeito(): string {
+    get prefeito() {
         return this._prefeito;
     }
-
-
-    public set prefeito(value: string) {
+    set prefeito(value) {
         this._prefeito = value;
     }
-
-
-    public get pais(): string {
+    get pais() {
         return this._pais;
     }
-
-
-    public set pais(value: string) {
+    set pais(value) {
         this._pais = value;
     }
-
-
-    public get nome(): string {
+    get nome() {
         return this._nome;
     }
-    
-    public set nome(value: string) {
+    set nome(value) {
         this._nome = value;
     }
-
-
-    public get habitantes(): number {
+    get habitantes() {
         return this._habitantes;
     }
-
-
-    public set habitantes(value: number) {
+    set habitantes(value) {
         this._habitantes = value;
     }
-
-
-    public get estado(): string {
+    get estado() {
         return this._estado;
     }
-
-
-    public set estado(value: string) {
+    set estado(value) {
         this._estado = value;
     }
-
-
     //* -----------------métodos para add----------------- //*
-
-
-    aumentarHabitantes(add: number): void {
+    aumentarHabitantes(add) {
         this.habitantes += add;
     }
-
-
-    diminuirHabitantes(add: number): void {
+    diminuirHabitantes(add) {
         this.habitantes -= add;
     }
-
-
-    editaPrefeito(edita: string): void {
+    editaPrefeito(edita) {
         this.prefeito = edita;
     }
-
-
-    public imprimeAtributos(): void {
-
-
+    imprimeAtributos() {
         console.log(`Tamanho: ${this._tamanho}`);
         console.log(`Prefeito: ${this._prefeito}`);
         console.log(`Pais: ${this._pais}`);
@@ -124,3 +83,4 @@ export default class Cidade {
         console.log(`--------------------------------`);
     }
 }
+exports.default = Cidade;
