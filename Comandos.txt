@@ -8,6 +8,9 @@ Comandos de instalação:
 
 usar para pedir dados:
 
+npm install prompt-sync
+npm install --save-dev @types/prompt-sync
+
 > import promptSync from "prompt-sync";
 > const prompt = promptSync();
 
