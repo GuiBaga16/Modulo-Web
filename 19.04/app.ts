@@ -6,7 +6,7 @@ const prompt = promptSync();
 
 let bebida: controllerBebida = new controllerBebida();
 
-for (let index = 0; index < 3; index++) {
+for (let index = 0; index < 5; index++) {
 
     let drink1: Bebida = new Bebida();
 
