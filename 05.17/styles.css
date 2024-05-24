@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to left, #46a3d8, #0076b4);
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s, border-radius 0.2s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(20, 79, 128, 0.712);
+    border-radius: 20px;
+    transform: translateX(10px);
+}
+
+nav ul li a img.icon0,
+nav ul li a img.icon1,
+nav ul li a img.icon2 {
+    margin-right: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+h1,
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0076b4;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.row {
+    display: flex;
+    border: 1px solid #ccc;
+    flex-wrap: nowrap;
+}
+
+.row.header {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cell {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.welcome-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#welcome p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+
+.content {
+    display: none;
+}
+
+.content:target {
+    display: block;
+}
+
+
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-button {
+    background-color: #029209;
+}
+
+.edit-button:hover {
+    background-color: hsl(123, 100%, 20%);
+    transform: scale(1.05) rotate(-3deg);
+}
+
+.delete-button {
+    background-color: #a50202;
+}
+
+.delete-button:hover {
+    background-color: #640000;
+    transform: scale(1.05) rotate(3deg);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .start-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .edit-button,
+    .delete-button {
+        padding: 8px;
+        font-size: 14px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 6px;
+    }
+
+    button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+
+    .start-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .edit-button,
+    .delete-button {
+        padding: 8px;
+        font-size: 14px;
+        display: block;
+    }
+}
