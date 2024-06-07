@@ -73,7 +73,7 @@ export default class BebidaController {
 
     public excluir(codigo: number): void {
 
-
         this._bebidas = this._bebidas.filter(bebida => bebida.codigo !== codigo);
+        
     }
 }
