@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <nav>
+    <h1>Jovem Aprendiz</h1>
+    <ul class="nav-menu">
+      <li><a href="../index.html">Homepage</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Pessoas</a>
+        <div class="dropdown-content">
+          <a href="../pessoa/cadastro.html">Cadastrar</a>
+          <a href="../pessoa/index.html">Listagem</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Carros</a>
+        <div class="dropdown-content">
+          <a href="../carro/cadastro.html">Cadastrar</a>
+          <a href="../carro/index.html">Listagem</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="div-tabela">
+    <table id="tabela" class="tabela">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Endereco</th>
+          <th>CPF</th>
+          <th>Email</th>
+          <th>Genero</th>
+          <th class="acoes-th">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+      </tbody>
+    </table>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

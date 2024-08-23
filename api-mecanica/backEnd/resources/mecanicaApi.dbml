@@ -1,0 +1,22 @@
+Project project_name {
+    database_type: 'PostgreSQL'
+}
+
+Table carros {
+  id serial [primary key]
+  marca varchar(255) [not null]
+  modelo varchar(255) [not null]
+  cor varchar(55) [not null]
+  categoria varchar(255) [not null]
+  dataFabricacao char (4) [not null]
+  problema varchar (255) [not null]
+}
+
+Table pessoas {
+  id serial [pk]
+  nome varchar(255) [not null]
+  endereco varchar(255) [not null]
+  cpf varchar(11) [not null]
+  email varchar(55) [not null]
+  genero varchar(55) [not null]
+}

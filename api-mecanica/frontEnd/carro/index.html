@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <h1>Jovem Aprendiz</h1>
+    <ul class="nav-menu">
+      <li><a href="../index.html">Homepage</a></li>
+      <li class="dropdown">
+        <a class="dropbtn">Pessoas</a>
+        <div class="dropdown-content">
+          <a href="../pessoa/cadastro.html">Cadastrar</a>
+          <a href="../pessoa/index.html">Listagem</a>
+          <!-- Adicione mais itens aqui se necessário -->
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn">Carros</a>
+        <div class="dropdown-content">
+          <a href="../carro/cadastro.html">Cadastrar</a>
+          <a href="../carro/index.html">Listagem</a>
+          <!-- Adicione mais itens aqui se necessário -->
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="div-tabela">
+    <ul id="lista"></ul>
+    <table id="tabela" class="tabela">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Cor</th>
+          <th>Categoria</th>
+          <th>Data Fabricação</th>
+          <th>Problema</th>
+          <th class="acoes-th">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+      </tbody>
+    </table>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

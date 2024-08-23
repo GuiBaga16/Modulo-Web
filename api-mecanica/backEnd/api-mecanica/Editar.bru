@@ -1,0 +1,22 @@
+meta {
+  name: Editar
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/carros/3
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "marca": "string",
+    "modelo": "string",
+    "cor": "string",
+    "categoria": "string",
+    "dataFabricacao":"char",
+    "problema": "string"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pessoas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="telaCadastro">
+
+    <nav class="nav-cabecalho">
+        <h1>Jovem Aprendiz</h1>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Homepage</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Pessoas</a>
+                <div class="dropdown-content">
+                    <a href="../pessoa/cadastro.html">Cadastrar</a>
+                    <a href="../pessoa/index.html">Listagem</a>
+                    <!-- Adicione mais itens aqui se necessário -->
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Carros</a>
+                <div class="dropdown-content">
+                    <a href="../carro/cadastro.html">Cadastrar</a>
+                    <a href="../carro/index.html">Listagem</a>
+                    <!-- Adicione mais itens aqui se necessário -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="fundo">
+
+        <header class="topPage">
+            <h2 class="titulo">Cadastro de pessoas</h2>
+        </header>
+
+        <br>
+        <section class="Cadastro">
+            <br>
+
+            <label>Nome</label>
+            <input id="nome" class="input" placeholder="Name" type="text">
+
+            <br>
+            <label>Endereço</label>
+            <input id="endereco" class="input" placeholder="Address" type="text">
+
+            <br>
+            <label>CPF</label>
+            <input id="cpf" class="input" placeholder="CPF" type="text">
+
+            <br>
+            <label>E-mail</label>
+            <input id="email" class="input" placeholder="E-mail" type="text">
+
+            <br>
+            <label>Genero</label>
+            <input id="genero" class="input" placeholder="gender" type="text">
+
+            <br>
+            <button class="btn" id="salvar">Salvar</button>
+            <script src="cadastro.js"></script>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

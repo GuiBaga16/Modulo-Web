@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="telaCadastro">
+
+    <nav class="nav-cabecalho">
+        <h1>Jovem Aprendiz</h1>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Homepage</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Pessoas</a>
+                <div class="dropdown-content">
+                    <a href="../pessoa/cadastro.html">Cadastrar</a>
+                    <a href="../pessoa/index.html">Listagem</a>
+                    <!-- Adicione mais itens aqui se necessário -->
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Carros</a>
+                <div class="dropdown-content">
+                    <a href="../carro/cadastro.html">Cadastrar</a>
+                    <a href="../carro/index.html">Listagem</a>
+                    <!-- Adicione mais itens aqui se necessário -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="fundo">
+
+        <header class="topPage">
+            <h2 class="titulo">Cadastro de carros</h2>
+        </header>
+
+        <br>
+        <section class="Cadastro">
+            <br>
+
+            <label>Modelo</label>
+            <input id="modelo" class="input" placeholder="Moodel" type="text">
+
+            <br>
+            <label>Marca</label>
+            <input id="marca" class="input" placeholder="Mark" type="text">
+
+            <br>
+            <label>Cor</label>
+            <input id="cor" class="input" placeholder="Color" type="text">
+
+            <br>
+            <label>Categoria</label>
+            <input id="categoria" class="input" placeholder="Category" type="text">
+
+            <br>
+            <label>Data de Fabricação</label>
+            <input id="dataFabricacao" class="input" placeholder="Manufacturing date" type="text">
+
+            <br>
+            <label>Problema</label>
+            <input id="problema" class="input" placeholder="Problem" type="text">
+
+            <br>
+            <button class="btn" id="salvar">Salvar</button>
+            <script src="cadastro.js"></script>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
